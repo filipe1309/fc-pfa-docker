@@ -8,6 +8,14 @@
 
 This project was developed following [FullCycle's PFA](https://portal.code.education/lms/#/180/164/128/conteudos).
 
+### Challenge 1
+
+-   [x] Create a program that list some of Full Cycle course modules
+-   [x] Create a nginx image that receice the http requests
+-   [x] Create a Gihub repo with the program & docker images
+-   [x] Create README.md with commands to send to the app that will run on port 8080
+-   [x] No docker-compose
+
 ## :computer: Technologies
 
 -   [Docker](https://www.docker.com/)
