@@ -19,11 +19,11 @@ This project was developed following [FullCycle's PFA](https://portal.code.educa
 ## :cd: Installation
 
 ```sh
-git clone [PROJECT_REPO_LINK]
+git clone git@github.com:filipe1309/fc-pfa-docker.git
 ```
 
 ```sh
-cd [PROJECT_REPO_NAME]
+cd fc-pfa-docker
 ```
 
 ### Create docker network
@@ -35,6 +35,12 @@ docker network create pfa-docker
 ## :runner: Running
 
 **Up app**
+
+```sh
+./init.sh
+```
+
+OR
 
 ```sh
 docker run --rm -d --network pfa-docker --name pfa-docker-mysql -e MYSQL_ROOT_PASSWORD=root devontherun/pfa-docker-mysql
