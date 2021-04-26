@@ -19,6 +19,10 @@ This project was developed following [FullCycle's PFA](https://portal.code.educa
 ## :computer: Technologies
 
 -   [Docker](https://www.docker.com/)
+-   [Node.js](https://nodejs.org/en/)
+-   [Nginx](https://www.nginx.com/)
+-   [MySQL](https://www.mysql.com/)
+-   [Node MySQL2](https://www.npmjs.com/package/mysql2)
 
 ## :scroll: Requirements
 
