@@ -4,4 +4,4 @@ CREATE TABLE modules (
     id INTEGER AUTO_INCREMENT,
     name TEXT,
     PRIMARY KEY (id)
-)
+) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
