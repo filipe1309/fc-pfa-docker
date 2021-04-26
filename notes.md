@@ -19,3 +19,7 @@ https://www.npmjs.com/package/mysql2
 npm un mysql && npm i mysql2
 
 docker build -t devontherun/pfa-docker-nginx .
+
+docker push devontherun/pfa-docker-mysql:latest
+docker push devontherun/pfa-docker-node:latest
+docker push devontherun/pfa-docker-nginx:latest

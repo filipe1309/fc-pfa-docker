@@ -44,9 +44,17 @@ OR
 
 ```sh
 docker run --rm -d --network pfa-docker --name pfa-docker-mysql -e MYSQL_ROOT_PASSWORD=root devontherun/pfa-docker-mysql
+```
+
+```sh
 docker run --rm -d --network pfa-docker --name pfa-docker-node devontherun/pfa-docker-node
+```
+
+```sh
 docker run --rm -d --network pfa-docker -p 8080:80 --name pfa-docker-nginx devontherun/pfa-docker-nginx
 ```
+
+Access http://localhost:8080/
 
 ## Contributing
 
