@@ -68,6 +68,12 @@ docker run --rm -d --network pfa-docker -p 8080:80 --name pfa-docker-nginx devon
 
 Access http://localhost:8080/
 
+### Stop containers
+
+```sh
+docker stop $(docker ps -f name=pfa-docker -q)
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
