@@ -55,7 +55,7 @@ docker network create pfa-docker
 OR
 
 ```sh
-docker run --rm -d --network pfa-docker --name pfa-docker-mysql devontherun/pfa-docker-mysql
+docker run --rm -d --network pfa-docker -v $(pwd)/mysql/db:/var/lib/mysql --name pfa-docker-mysql devontherun/pfa-docker-mysql
 ```
 
 ```sh
