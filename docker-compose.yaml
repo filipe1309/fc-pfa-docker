@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+    pfa-docker-mysql:
+        build: ./mysql
+        volumes:
+            - ./mysql/db:/var/lib/mysql
+
+    pfa-docker-node:
+        build: ./node
+        volumes:
+            - ./node:/usr/src/app
+        depends_on:
+            - pfa-docker-mysql
+
+    pfa-docker-nginx:
+        build: ./nginx
+        ports:
+            - 8080:80
+        depends_on:
+            - pfa-docker-node

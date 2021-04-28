@@ -29,3 +29,6 @@ show variables like 'character%';
 ## --init intead of -d
 
 $ docker run --rm --init -it --network pfa-docker --name pfa-docker-node -v $(pwd):/usr/src/app devontherun/pfa-docker-node
+
+docker-compose up
+docker-compose down

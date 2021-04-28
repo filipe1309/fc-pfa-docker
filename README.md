@@ -52,7 +52,7 @@ docker network create pfa-docker
 ./init.sh
 ```
 
-OR
+**OR**
 
 ```sh
 docker run --rm -d --network pfa-docker -v $(pwd)/mysql/db:/var/lib/mysql --name pfa-docker-mysql devontherun/pfa-docker-mysql
@@ -65,6 +65,14 @@ docker run --rm -d --network pfa-docker -v $(pwd)/node:/usr/src/app --name pfa-d
 ```sh
 docker run --rm -d --network pfa-docker -p 8080:80 --name pfa-docker-nginx devontherun/pfa-docker-nginx
 ```
+
+**OR**
+
+```sh
+docker-compose up
+```
+
+> docker-compose down to remove containers
 
 Access http://localhost:8080/
 
