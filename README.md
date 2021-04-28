@@ -59,7 +59,7 @@ docker run --rm -d --network pfa-docker -v $(pwd)/mysql/db:/var/lib/mysql --name
 ```
 
 ```sh
-docker run --rm -d --network pfa-docker --name pfa-docker-node devontherun/pfa-docker-node
+docker run --rm -d --network pfa-docker -v $(pwd)/node:/usr/src/app --name pfa-docker-node devontherun/pfa-docker-node
 ```
 
 ```sh
