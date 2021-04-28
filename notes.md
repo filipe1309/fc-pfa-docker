@@ -25,3 +25,7 @@ docker push devontherun/pfa-docker-node:latest
 docker push devontherun/pfa-docker-nginx:latest
 
 show variables like 'character%';
+
+## --init intead of -d
+
+$ docker run --rm --init -it --network pfa-docker --name pfa-docker-node -v $(pwd):/usr/src/app devontherun/pfa-docker-node
